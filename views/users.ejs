@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Users</title>
+    <!-- href here starts in public directory as / -->
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    
+    <h1>Users</h1>
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Password
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+        <% for (const i in rows) { %>
+            <tr>
+                <td>
+                    <%= rows[i].name %>
+                </td>
+                <td>
+                    <%= rows[i].password %>
+                </td>
+            </tr>
+
+        <% } %>
+        </tbody>
+    </table>
+    <br>
+    <a href="/">home</a>
+
+  </body>
+</html>
