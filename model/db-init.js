@@ -3,7 +3,7 @@ var sqlite3 = require('sqlite3').verbose();
 // Define database file path
 var filePath = "IronMeteorite.db"
 
-// 
+// Init/connect to DB
 var db = new sqlite3.Database(filePath, (error) => {
 				// Callback function 
 				if(error !== null){
@@ -19,6 +19,7 @@ var sql = " CREATE TABLE IF NOT EXISTS users(" +
 				"name TEXT," +
 				"password TEXT)";
 
+// Run query
 db.run(sql);
 
 
