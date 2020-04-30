@@ -16,7 +16,7 @@
     "express": "^4.16.4",
     "fsevents": "^2.1.2",
     "http-errors": "^1.6.3",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "morgan": "^1.9.1",
     "nodemon": "^1.18.11",
     "popper.js": "^1.14.3",
